@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>더하기, 뺼셈, 나눗셈</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+</head>
+<body>
+    <div id="wrap">
+        <h1>수학 연습장</h1>
+        <ul class="type_lsit">
+            <li><button>1자리수</button></li>
+            <li><button>2자리수</button></li>
+        </ul>
+        <ul class="btn-list">
+            <li><button>+</button></li>
+            <li><button>-</button></li>
+            <li><button>x</button></li>
+        </ul>
+        <div class="panel_wrap">
+            <div class="left-number_box"></div>
+            <div class="sign_box"></div>    
+            <div class="right-number_box"></div>
+            <span class="bracket">=</span>
+            <div class="result_wrap">
+                <input type="text" class="result_value">
+                <button>확인</button>
+            </div>
+        </div>
+        <div class="popup_layer">
+            <div class="popup_contents">
+                <a href="javascript:;" class="btn_close">X</a>
+                <ul class="img_list">
+                    <li>
+                        <img src="assets/img/wrong.png" alt="오답">
+                    </li>
+                    <li>
+                        <img src="assets/img/ok_img.jpeg" alt="정답">
+                    </li>
+                </ul>
+                <P class="result-title"></P>
+            </div>
+            <div class="dimd"></div>    
+        </div>
+    </div>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/common.js"></script>
+</body>
+</html>
